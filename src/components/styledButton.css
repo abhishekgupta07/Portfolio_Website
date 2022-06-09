@@ -1,0 +1,37 @@
+.parentProfileDiv{
+    height: 100vh;
+    position: fixed;
+    background: grey;
+    padding: 60px;
+    
+}
+
+div.buttonAlignment button{
+    border-radius: 5px;
+    border: hidden;
+    margin-bottom: 10px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+       
+    
+       
+}
+
+.profileImage{
+    border: 2px solid;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    
+}
+
+.profileNameHandleDiv{
+    margin-bottom: 30px ;
+    
+}
+.MUI{
+    color: white;
+
+}
+
