@@ -1,9 +1,16 @@
 .parentProfileDiv{
     height: 100vh;
-    position: fixed;
-    background: grey;
+    position: absolute;
+    background: black;
     padding: 60px;
     
+}
+.Heroimage{
+height:100vh;
+width:100%;
+}
+div.buttonAlignment {
+    text-align: left;
 }
 
 div.buttonAlignment button{
@@ -11,11 +18,8 @@ div.buttonAlignment button{
     border: hidden;
     margin-bottom: 10px;
     background-color: black;
-    color: aliceblue;
-    font-size: 20px;
-       
-    
-       
+    color: grey;
+    font-size: 20px;  
 }
 
 .profileImage{
@@ -28,10 +32,45 @@ div.buttonAlignment button{
 
 .profileNameHandleDiv{
     margin-bottom: 30px ;
+    color: azure;
     
 }
 .MUI{
-    color: white;
-
+    color: grey;
+    font-size: 22px;
+    cursor: pointer;
+    
 }
 
+.MUI:hover{
+    color: #CCCCFF
+}
+
+.handleIcons{
+    font-size: large;
+}
+
+.handleIconsBorder{
+    padding: 4px;
+    font-size: 35px;
+    color: grey;
+    border: 0px solid white;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.handleIconsBorder:hover{
+    background-color: #CCCCFF;
+    cursor: pointer;
+}
+/* .sidebar-wrapper {
+	max-width: 295px;
+	margin-bottom: 50px
+}
+@media (max-width:991px) {
+	.sidebar-wrapper {
+		width: 100%;
+		max-width: 992px;
+		margin-bottom: 0
+	}
+} */
