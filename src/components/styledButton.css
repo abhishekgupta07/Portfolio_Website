@@ -1,8 +1,9 @@
 .parentProfileDiv{
-    height: 100vh;
+    height: 100%;
     position: absolute;
     background: black;
     padding: 60px;
+    overflow: auto;
     
 }
 .Heroimage{
@@ -37,7 +38,7 @@ div.buttonAlignment button{
 }
 .MUI{
     color: grey;
-    font-size: 22px;
+    font-size: 1.4em;
     cursor: pointer;
     
 }
@@ -52,7 +53,7 @@ div.buttonAlignment button{
 
 .handleIconsBorder{
     padding: 4px;
-    font-size: 35px;
+    font-size: 2em;
     color: grey;
     border: 0px solid white;
     border-radius: 50%;

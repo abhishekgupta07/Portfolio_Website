@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 import "./styledButton.css";
 import avatar from "./Avatar.jpg";
-// import HomeButton from './HomeButton'
 import { GoHome } from "react-icons/go";
 import { ImAttachment, ImLinkedin } from "react-icons/im";
 import { BsPen, BsTwitter, BsPerson } from "react-icons/bs";
 import { IoMdPaper } from "react-icons/io";
 import { VscAccount } from "react-icons/vsc";
 import { RiInstagramLine } from "react-icons/ri";
-// import Elon from "./ElonMusk.jpg";
 import Water from "./Water.jpg";
 
 class UIproject extends Component {
