@@ -1,11 +1,31 @@
 .parentProfileDiv{
     height: 100%;
-    position: absolute;
+    position: fixed;
     background: black;
     padding: 60px;
     overflow: auto;
     
 }
+.parentProfileDiv::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .parentProfileDiv::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+
+  .parentProfileDiv::-webkit-scrollbar-thumb {
+    background: #CCCCFF; 
+    border-radius: 10px;
+  }
+  
+  .parentProfileDiv::-webkit-scrollbar-thumb:hover {
+    background: grey; 
+}
+
+
 .Heroimage{
 height:100vh;
 width:100%;
@@ -64,14 +84,14 @@ div.buttonAlignment button{
     background-color: #CCCCFF;
     cursor: pointer;
 }
-/* .sidebar-wrapper {
-	max-width: 295px;
-	margin-bottom: 50px
+ 
+.animatedText{
+    color: orange;
+    font-family: monospace;
+    font-size: 4em;
+    position: absolute;
+    right: 20%;
+    left: 80%;
+    bottom: 2%;
+
 }
-@media (max-width:991px) {
-	.sidebar-wrapper {
-		width: 100%;
-		max-width: 992px;
-		margin-bottom: 0
-	}
-} */

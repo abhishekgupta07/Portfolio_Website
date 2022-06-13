@@ -8,6 +8,7 @@ import { IoMdPaper } from "react-icons/io";
 import { VscAccount } from "react-icons/vsc";
 import { RiInstagramLine } from "react-icons/ri";
 import Water from "./Water.jpg";
+import Typical from "react-typical";
 
 class UIproject extends Component {
   render() {
@@ -66,7 +67,13 @@ class UIproject extends Component {
           </div>
         </div>
         <div>
-          <img src={Water} className="Heroimage" />
+          <img src={Water} className="Heroimage" alt="BackgroundImage" />
+          <Typical
+            className="animatedText"
+            loop={Infinity}
+            wrapper="b"
+            steps={[" ", 1000, "<", 1000, "</", 1000, "</>", 1000]}
+          />
         </div>
       </div>
     );
