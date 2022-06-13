@@ -6,6 +6,7 @@
     overflow: auto;
     
 }
+
 .parentProfileDiv::-webkit-scrollbar {
     width: 8px;
   }

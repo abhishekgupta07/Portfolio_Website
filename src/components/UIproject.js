@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import "./styledButton.css";
-import avatar from "./Avatar.jpg";
+import avatar from "./Images/Avatar.jpg";
 import { GoHome } from "react-icons/go";
 import { ImAttachment, ImLinkedin } from "react-icons/im";
 import { BsPen, BsTwitter, BsPerson } from "react-icons/bs";
 import { IoMdPaper } from "react-icons/io";
 import { VscAccount } from "react-icons/vsc";
 import { RiInstagramLine } from "react-icons/ri";
-import Water from "./Water.jpg";
+import Water from "./Images/Water.jpg";
 import Typical from "react-typical";
+import { Link, animateScroll as scroll } from "react-scroll";
+import AboutButton from "./AboutSection/AboutSection";
 
 class UIproject extends Component {
   render() {
@@ -38,13 +40,29 @@ class UIproject extends Component {
             </span>
             <span className="MUI">
               <BsPerson />
-              <button> About</button>
+              <Link
+                to="aabout"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                About
+              </Link>
               <br />
               <br />
             </span>
             <span className="MUI">
               <ImAttachment />
-              <button> Resume</button>
+              <Link
+                to="resume"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Resume
+              </Link>
               <br />
               <br />
             </span>
