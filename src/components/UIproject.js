@@ -58,8 +58,9 @@ class UIproject extends Component {
                 to="resume"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={50}
                 duration={500}
+                delay={1000}
               >
                 Resume
               </Link>
