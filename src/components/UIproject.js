@@ -11,11 +11,13 @@ import Water from "./Images/Water.jpg";
 import Typical from "react-typical";
 import { Link, animateScroll as scroll } from "react-scroll";
 import AboutButton from "./AboutSection/AboutSection";
+// import AboutButton from "./components/AboutSection/AboutSection";
 
 class UIproject extends Component {
   render() {
     return (
       <div>
+        <div>
         <div className="parentProfileDiv">
           <div className="profileNameHandleDiv sidebar-wrapper">
             <img src={avatar} className="profileImage" alt="Profile" />
@@ -93,6 +95,8 @@ class UIproject extends Component {
             steps={[" ", 1000, "<", 1000, "</", 1000, "</>", 1000]}
           />
         </div>
+        </div>
+
       </div>
     );
   }
