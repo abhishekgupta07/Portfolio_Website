@@ -1,0 +1,10 @@
+#firstphoto{
+    height: 282px;
+    /* border:1.5px solid cyan; */
+    /* text-decoration: underline; */
+    border-bottom: 1.5px solid grey;
+    }
+
+.wholecard{
+    border: 1.5px solid black;
+}

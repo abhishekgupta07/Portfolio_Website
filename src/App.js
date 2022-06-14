@@ -8,10 +8,12 @@ import Resume from "./components/Resume/Resume";
 function App() {
   return (
     <div className="App">
+      <div className="background">
       <UIproject />
 
       <div id="aabout">
         <AboutButton />
+      </div>
       </div>
 
       <div id="resume">
