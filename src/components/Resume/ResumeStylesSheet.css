@@ -1,0 +1,23 @@
+.DownloadIcon{
+    padding: 4px;
+    font-size: 6em;
+    color: grey;
+    border: 0px solid white;
+    border-radius: 50%;
+}
+.ResumeHeader{
+font-size: 20px;
+font-family: cursive;
+text-decoration: underline 3px;
+color: #808080;
+margin-right: 39em;
+
+}
+.ResumeBackground{
+    background-color: #e6e6e6;
+}
+
+.DownloadIcon:hover{
+    background-color: #CCCCFF;
+    cursor: pointer;
+}

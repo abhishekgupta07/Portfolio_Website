@@ -5,7 +5,6 @@ import AboutButton from "./components/AboutSection/AboutSection";
 import UIproject from "./components/UIproject";
 import React, { PureComponent } from "react";
 import Resume from "./components/Resume/Resume";
-
 function App() {
   return (
     <div className="App">
