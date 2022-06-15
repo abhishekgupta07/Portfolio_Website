@@ -8,17 +8,26 @@ import Resume from "./components/Resume/Resume";
 function App() {
   return (
     <div className="App">
-      <div className="background">
-      <UIproject />
-
+      <div className="background" id="home">
+        <UIproject />
+      </div>
       <div id="aabout">
         <AboutButton />
-      </div>
       </div>
 
       <div id="resume">
         <Resume />
       </div>
+
+      {/* <div id="skill">
+        <Skills />
+      </div>
+      <div id="project">
+        <Project />
+      </div>
+      <div id="contact">
+        <Contact/Footer />
+      </div> */}
     </div>
   );
 }

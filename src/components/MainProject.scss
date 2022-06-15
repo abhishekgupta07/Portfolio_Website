@@ -1,13 +1,25 @@
+
 $font-color-grey: grey;
-$font-color-red: red;
+$font-color-red: #990000;
 $handler-Icon-Color: black;
 $Alice-Blue-Color: #CCCCFF;
 $blackColor-for-AboutSection: black;
+.light{
+    .text{
+        color:$font-color-red;
+    }
+}
+
+.dark{
+    .text{
+        color:$font-color-red;
+    }
+}
 
 .parentProfileDiv{
     height: 100%;
     position: fixed;
-    background: black;
+    background: black; //===>bgc
     padding: 60px;
     overflow: auto;
     
@@ -24,12 +36,12 @@ $blackColor-for-AboutSection: black;
    
 
   .parentProfileDiv::-webkit-scrollbar-thumb {
-    background: $Alice-Blue-Color; 
+    background: $Alice-Blue-Color;   
     border-radius: 10px;
   }
   
   .parentProfileDiv::-webkit-scrollbar-thumb:hover {
-    background: $font-color-grey; 
+    background: $font-color-grey;   
 }
 
 
@@ -45,7 +57,7 @@ div.buttonAlignment button{
     border-radius: 5px;
     border: hidden;
     margin-bottom: 10px;
-    background-color: black;
+    background-color: black; 
     color: grey;
     font-size: 20px;  
 }
@@ -84,7 +96,7 @@ div.buttonAlignment button{
     color: $font-color-grey;
     border: 0px solid ;
     border-radius: 50%;
-    background-color: $handler-Icon-Color;
+    background-color: $handler-Icon-Color; 
 }
 
 .handleIconsBorder:hover{
@@ -94,7 +106,7 @@ div.buttonAlignment button{
 
  
 .animatedText{
-    color: orange;
+    color: orange;  
     font-family: monospace;
     font-size: 4em;
     position: absolute;
