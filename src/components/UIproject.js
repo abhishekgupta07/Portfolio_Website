@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./styledButton.css";
+import "./MainProject.scss";
 import avatar from "./Images/Avatar.jpg";
 import { GoHome } from "react-icons/go";
 import { ImAttachment, ImLinkedin } from "react-icons/im";
@@ -11,7 +11,9 @@ import Water from "./Images/Water.jpg";
 import Typical from "react-typical";
 import { Link, animateScroll as scroll } from "react-scroll";
 import AboutButton from "./AboutSection/AboutSection";
+
 // import AboutButton from "./components/AboutSection/AboutSection";
+
 
 class UIproject extends Component {
   render() {
@@ -34,7 +36,7 @@ class UIproject extends Component {
           </div>
 
           <div className="buttonAlignment">
-            <span className="MUI">
+            <span className="MUI themechanger">
               <GoHome />
               <button> Home </button>
               <br />

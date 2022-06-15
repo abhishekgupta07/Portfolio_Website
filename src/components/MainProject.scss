@@ -1,0 +1,113 @@
+// variable made for the theme changing stuff
+$primary-color: black;
+$secondry-color:#273143;
+$textcolor:white;
+@function background($lightheme){
+    @if $lightheme{
+        $bgcolor:$primary-color;
+        @return $bgcolor;
+    }
+    @else{
+        $bgcolor:$secondry-color;
+        @return $bgcolor;
+
+    }
+}
+$bgcolor:background(false);
+// $textcolor:$primary-color;
+.parentProfileDiv {
+    height: 100%;
+    position: fixed;
+    background:$bgcolor;
+    padding: 60px;
+    overflow: auto;
+
+}
+    .parentProfileDiv::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .parentProfileDiv::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+
+
+    .parentProfileDiv::-webkit-scrollbar-thumb {
+        background: #CCCCFF;
+        border-radius: 10px;
+    }
+
+    .parentProfileDiv::-webkit-scrollbar-thumb:hover {
+        background: gray;
+    }
+
+    .Heroimage {
+        height: 100vh;
+        width: 100%;
+    }
+
+    div.buttonAlignment {
+        text-align: left;
+    }
+
+    div.buttonAlignment button {
+        border-radius: 5px;
+        border: hidden;
+        margin-bottom: 10px;
+        background-color: $bgcolor;
+        color: $textcolor;
+        font-size: 20px;
+    }
+
+    .profileImage {
+        border: 2px solid;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+
+    }
+
+    .profileNameHandleDiv {
+        margin-bottom: 30px;
+        color: $textcolor;
+
+    }
+
+    .MUI {
+        color: $textcolor;
+        font-size: 1.4em;
+        cursor: pointer;
+    }
+
+    .MUI:hover {
+        color: #CCCCFF
+    }
+
+    .handleIcons {
+        font-size: large;
+    }
+
+    .handleIconsBorder {
+        padding: 4px;
+        font-size: 2em;
+        color: $textcolor;
+        // border: 0px solid black;
+        border-radius: 50%;
+        background-color:$bgcolor;
+    }
+
+    .handleIconsBorder:hover {
+        background-color: #CCCCFF;
+        cursor: pointer;
+    }
+
+    .animatedText {
+        color: orange;
+        font-family: monospace;
+        font-size: 4em;
+        position: absolute;
+        right: 20%;
+        left: 80%;
+        bottom: 2%;
+    }

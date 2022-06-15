@@ -1,3 +1,4 @@
+@import "./components/AboutSection/AboutSection.scss";
 .App {
   text-align: center;
 }
@@ -45,6 +46,7 @@
   color: #61dafb;
 }
 .AboutSection{
+  // @extend .themechanger;
   margin-top:4.75rem;
 }
 
@@ -57,6 +59,7 @@
   }
 }
 .AboutSectionCards{
+  // @extend .themechanger;
   margin-left:250px;
   /* margin-top:200px; */
 }
