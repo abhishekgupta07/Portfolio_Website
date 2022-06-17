@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./MainProject.scss";
+import "./styledButton.scss";
 import avatar from "./Images/Avatar.jpg";
 import { GoHome } from "react-icons/go";
 import { ImAttachment, ImLinkedin } from "react-icons/im";
@@ -9,19 +9,7 @@ import { VscAccount } from "react-icons/vsc";
 import { RiInstagramLine } from "react-icons/ri";
 import Water from "./Images/Water.jpg";
 import Typical from "react-typical";
-import { Link } from "react-scroll";
-import Switch from "react-switch";
 class UIproject extends Component {
-  constructor() {
-    super();
-    this.state = { checked: false };
-    this.ToggleChange = this.ToggleChange.bind(this);
-  }
-
-  ToggleChange(checked) {
-    this.setState({ checked });
-  }
-
   render() {
     return (
       <div>
@@ -48,90 +36,59 @@ class UIproject extends Component {
               <br />
             </div>
           </div>
-          <div className="buttonAlignment text">
-            <span className="MUI">
-              <GoHome />
-              <Link
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Home
-              </Link>
-              <br />
-              <br />
-            </span>
-            <span className="MUI">
-              <BsPerson />
-              <Link
-                to="aabout"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                About
-              </Link>
-              <br />
-              <br />
-            </span>
-            <span className="MUI">
-              <ImAttachment />
-              <Link
-                to="resume"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                delay={1000}
-              >
-                Resume
-              </Link>
-              <br />
-              <br />
-            </span>
-            <span className="MUI">
-              <BsPen />
-              <Link
-                to="skill"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Skills
-              </Link>
-              <br />
-              <br />
-            </span>
-            <span className="MUI">
-              <IoMdPaper />
-              <Link
-                to="project"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Projects
-              </Link>
-              <br />
-              <br />
-            </span>
-            <span className="MUI">
-              <VscAccount />
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Contact
-              </Link>{" "}
-            </span>
+
+          <div className="buttonAlignment">
+              <span className="MUI themechanger">
+                <GoHome />
+                <button> Home </button>
+                <br />
+                <br />
+              </span>
+              <span className="MUI">
+                <BsPerson />
+                <Link
+                  to="aabout"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  About
+                </Link>
+                <br />
+                <br />
+              </span>
+              <span className="MUI">
+                <ImAttachment />
+                <Link
+                  to="resume"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                  delay={1000}
+                >
+                  Resume
+                </Link>
+                <br />
+                <br />
+              </span>
+              <span className="MUI">
+                <BsPen />
+                <button> Skills</button>
+                <br />
+                <br />
+              </span>
+              <span className="MUI">
+                <IoMdPaper />
+                <button> Projects</button>
+                <br />
+                <br />
+              </span>
+              <span className="MUI">
+                <VscAccount />
+                <button> Contact</button>
+              </span>
           </div>
           <br />
 

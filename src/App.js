@@ -1,34 +1,33 @@
 // import React from "react";
 // import logo from './logo.svg';
-import "./App.css";
+import "./App.scss";
 import AboutButton from "./components/AboutSection/AboutSection";
 import UIproject from "./components/UIproject";
-import React, { PureComponent } from "react";
 import Resume from "./components/Resume/Resume";
+import { Routes, BrowserRouter as Router, Route } from "react-router-dom";
+import SideBar from "./components/SideBar";
+import Skills from "./components/Skills/Skills";
+import Project from "./components/Projects/Project";
+import Contact from "./components/Contact/Contact";
+
 function App() {
   return (
-    <div className="App">
-      <div className="background" id="home">
-        <UIproject />
-      </div>
-      <div id="aabout">
-        <AboutButton />
-      </div>
+    <Router>
+      <div className="App">
+        <SideBar />
 
-      <div id="resume">
-        <Resume />
+        <div className="background" id="home">
+          <Routes>
+            <Route path="/" element={<UIproject />} />
+            <Route path="/about" exact element={<AboutButton />} />
+            <Route path="/resume" exact element={<Resume />} />
+            <Route path="/skills" exact element={<Skills />} />
+            <Route path="/my-projects" exact element={<Project />} />
+            <Route path="/contact" exact element={<Contact />} />
+          </Routes>
+        </div>
       </div>
-
-      {/* <div id="skill">
-        <Skills />
-      </div>
-      <div id="project">
-        <Project />
-      </div>
-      <div id="contact">
-        <Contact/Footer />
-      </div> */}
-    </div>
+    </Router>
   );
 }
 

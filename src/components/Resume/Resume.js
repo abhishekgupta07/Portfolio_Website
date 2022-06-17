@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BiCloudDownload } from "react-icons/bi";
-import "./ResumeStylesSheet.css";
+import "./ResumeStylesSheet.scss";
 
 class Resume extends Component {
   render() {
