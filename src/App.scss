@@ -1,5 +1,10 @@
 @import "./components/AboutSection/AboutSection.scss";
 @import "./components/styledButton.scss";
+
+.App {
+  background-color: red;
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +19,8 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.AboutSectionHeading{
+
+.AboutSectionHeading {
   color: $textcolor;
   font-family: cursive;
   font-size: 3em;
@@ -22,6 +28,7 @@
   text-decoration-thickness: 2px;
   margin-right: 55rem;
 }
+
 .App-header {
   background-color: black;
   min-height: 100vh;
@@ -32,53 +39,59 @@
   font-size: calc(10px + 2vmin);
   color: $textcolor;
 }
-#aabout{
-  margin-top:0rem;
+
+#aabout {
+  margin-top: 0rem;
 }
-.line{
-  width: 112px;
-  height: 47px;
-  border-bottom: 1px solid black;
-  position: absolute;
-  }
+
 .App-link {
   color: #61dafb;
 }
+
 .background {
   background-color: $bgcolor;
 }
-.AboutSection{
-  margin-top:4.75rem;
+
+.AboutSection {
+  margin-top: 0rem;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-.AboutSectionCards{
-  margin-left:250px;
+
+.AboutSectionCards {
+  margin-left: 250px;
   background-color: $bgcolor;
   /* margin-top:200px; */
 }
-$cardtext:white;
-@function cardstheme($bgcolor){
-  @if $bgcolor==$textcolor{
-      $cardtext:black;
+
+$cardtext: white;
+
+@function cardstheme($bgcolor) {
+  @if $bgcolor==$textcolor {
+    $cardtext: black;
   }
-  @else{
-    $cardtext:$textcolor;
+
+  @else {
+    $cardtext: $textcolor;
   }
 }
+
 #cardbg {
   background-color: $bgcolor;
 }
-#cardtext{
-  color:$cardtext;
+
+#cardtext {
+  color: $cardtext;
 }
+
 .AboutPara {
   color: $textcolor;
   font-size: 20rm;

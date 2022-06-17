@@ -9,14 +9,36 @@ import { VscAccount } from "react-icons/vsc";
 import { RiInstagramLine } from "react-icons/ri";
 import Water from "./Images/Water.jpg";
 import Typical from "react-typical";
+import { Link } from "react-scroll";
+import Switch from "react-switch"; 
+import "./styledButton.scss"
 class UIproject extends Component {
+  constructor() {
+    super();
+    this.state = { checked: false };
+    this.ToggleChange = this.ToggleChange.bind(this);
+  }
+  componentDidMount() {
+    document.documentElement.style.setProperty('--boolresult', "#273143");
+  }
+  ToggleChange(checked) {
+    this.setState({ checked });
+    if (this.state.checked === true) {
+      console.log(this.state.checked);
+      document.documentElement.style.setProperty('--boolresult', "#273143");
+    }
+    else if (this.state.checked === false) {
+      console.log(this.state.checked);
+      document.documentElement.style.setProperty('--boolresult', "black");
+    }
+  }
   render() {
     return (
       <div>
         <div className="parentProfileDiv ">
           <div className="profileNameHandleDiv ">
             <img src={avatar} className="profileImage" alt="Profile" />
-            <h1> NAME </h1>
+            <h1 className="mix">  NAME </h1>
             <div className="handleIcons">
               <BsTwitter className="handleIconsBorder" title="Twitter" />
 
@@ -38,57 +60,57 @@ class UIproject extends Component {
           </div>
 
           <div className="buttonAlignment">
-              <span className="MUI themechanger">
-                <GoHome />
-                <button> Home </button>
-                <br />
-                <br />
-              </span>
-              <span className="MUI">
-                <BsPerson />
-                <Link
-                  to="aabout"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={500}
-                >
-                  About
-                </Link>
-                <br />
-                <br />
-              </span>
-              <span className="MUI">
-                <ImAttachment />
-                <Link
-                  to="resume"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={500}
-                  delay={1000}
-                >
-                  Resume
-                </Link>
-                <br />
-                <br />
-              </span>
-              <span className="MUI">
-                <BsPen />
-                <button> Skills</button>
-                <br />
-                <br />
-              </span>
-              <span className="MUI">
-                <IoMdPaper />
-                <button> Projects</button>
-                <br />
-                <br />
-              </span>
-              <span className="MUI">
-                <VscAccount />
-                <button> Contact</button>
-              </span>
+            <span className="MUI themechanger">
+              <GoHome />
+              <button> Home </button>
+              <br />
+              <br />
+            </span>
+            <span className="MUI">
+              <BsPerson />
+              <Link
+                to="aabout"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                About
+              </Link>
+              <br />
+              <br />
+            </span>
+            <span className="MUI">
+              <ImAttachment />
+              <Link
+                to="resume"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                delay={1000}
+              >
+                Resume
+              </Link>
+              <br />
+              <br />
+            </span>
+            <span className="MUI">
+              <BsPen />
+              <button> Skills</button>
+              <br />
+              <br />
+            </span>
+            <span className="MUI">
+              <IoMdPaper />
+              <button> Projects</button>
+              <br />
+              <br />
+            </span>
+            <span className="MUI">
+              <VscAccount />
+              <button> Contact</button>
+            </span>
           </div>
           <br />
 

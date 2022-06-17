@@ -1,24 +1,23 @@
 import React, { Component } from "react";
-import { Card, CardGroup} from 'react-bootstrap';
+import { Card, CardGroup } from 'react-bootstrap';
 // import "./AboutSection.css"
 import logo from "../../logo.svg"
 import ML from "../Images/Machine.jpg"
 import DS from "../Images/DS.jpg"
 import "../../App.scss"
-import "./AboutSection.scss"  
+
 class AboutButton extends Component {
   render() {
     return (
-        <div className="AboutSection">
-          <p className="line"></p>
-          <h1 className="AboutSectionHeading">About</h1>
-          <p className="AboutPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div className="AboutSectionCards ">
+      <div className="AboutSection background">
+        <h1 className="AboutSectionHeading">About</h1>
+        <p className="AboutPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div className="AboutSectionCards ">
           <CardGroup>
             <Card>
-            <Card.Img style={{"background-color": "currentColor"}} id="firstphoto" variant="top" src={logo} />
+              <Card.Img style={{ "background-color": "currentColor" }} id="firstphoto" variant="top" src={logo} />
               <Card.Body id="cardbg">
                 <Card.Title id="cardtext">React</Card.Title>
                 <Card.Text id="cardtext">
@@ -27,7 +26,7 @@ class AboutButton extends Component {
                 </Card.Text>
               </Card.Body>
               <Card.Footer id="cardbg">
-              <small id="cardtext">Last updated 3 mins ago</small>
+                <small id="cardtext">Last updated 3 mins ago</small>
               </Card.Footer>
             </Card>
             <Card>
@@ -60,7 +59,7 @@ class AboutButton extends Component {
             </Card>
           </CardGroup>
         </div>
-        </div>
+      </div>
     );
   }
 }
