@@ -94,23 +94,29 @@ class SideBar extends Component {
           <div className="profileNameHandleDiv ">
             <img src={avatar} className="profileImage" alt="Profile" />
             <br />
-            <h1> NAME </h1>
+            <h1 className="nameSect"> NAME </h1>
 
             <div className="handleIcons">
-              <BsTwitter className="handleIconsBorder" title="Twitter" />
+              <a href={"https://twitter.com"}>
+                <BsTwitter className="handleIconsBorder" title="Twitter" />
+              </a>
+              <span> </span>
+              <a href={"https://instagram.com/"}>
+                <RiInstagramLine
+                  className="handleIconsBorder"
+                  Tooltip
+                  title="Instagram"
+                />
+              </a>
+              <span> </span>
+              <a href={"https://linkedin.com/in/abhishekkguptaa "}>
+                <ImLinkedin
+                  className="handleIconsBorder"
+                  Tooltip
+                  title="LinkedIn"
+                />
+              </a>
 
-              <span> </span>
-              <RiInstagramLine
-                className="handleIconsBorder"
-                Tooltip
-                title="Instagram"
-              />
-              <span> </span>
-              <ImLinkedin
-                className="handleIconsBorder"
-                Tooltip
-                title="LinkedIn"
-              />
               <br />
               <br />
             </div>
