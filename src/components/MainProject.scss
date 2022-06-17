@@ -19,8 +19,8 @@ $blackColor-for-AboutSection: black;
 .parentProfileDiv{
     height: 100%;
     position: fixed;
-    background: black; //===>bgc
-    padding: 60px;
+    background: black;
+    padding: 55px;
     overflow: auto;
     
 }
@@ -50,8 +50,7 @@ height:100vh;
 width:100%;
 }
 div.buttonAlignment {
-    text-align: left;
-}
+    text-align: center}
 
 div.buttonAlignment button{
     border-radius: 5px;
@@ -77,7 +76,7 @@ div.buttonAlignment button{
 }
 .MUI{
     color: $font-color-grey;
-    font-size: 1.4em;
+    font-size: large;
     cursor: pointer;
     
 }
