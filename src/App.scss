@@ -1,0 +1,96 @@
+@import "./components/AboutSection/AboutSection.scss";
+@import "./components/MainProject.scss";
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.AboutSectionHeading {
+  color: black;
+  font-family: cursive;
+  font-size: 3em;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  margin-right: 55rem;
+}
+
+.App-header {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $textcolor;
+}
+
+#aabout {
+  margin-top: 0rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.background {
+  background-color: white;
+}
+
+.AboutSection {
+  margin-top: 0rem;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.AboutSectionCards {
+  margin-left: 250px;
+  background-color: $bgcolor;
+  /* margin-top:200px; */
+}
+
+$cardtext: white;
+
+@function cardstheme($bgcolor) {
+  @if $bgcolor==$textcolor {
+    $cardtext: black;
+  }
+
+  @else {
+    $cardtext: $textcolor;
+  }
+}
+
+#cardbg {
+  background-color: $bgcolor;
+}
+
+#cardtext {
+  color: $cardtext;
+}
+
+.AboutPara {
+  color: black;
+  font-size: 20rm;
+  margin-top: 30px;
+  margin-left: 250px;
+  text-align: left;
+}

@@ -9,7 +9,6 @@ import { VscAccount } from "react-icons/vsc";
 import { RiInstagramLine } from "react-icons/ri";
 // import { Link } from "react-scroll";
 import Switch from "react-switch";
-
 import { Link } from "react-router-dom";
 class SideBar extends Component {
   constructor() {
@@ -20,6 +19,14 @@ class SideBar extends Component {
 
   ToggleChange(checked) {
     this.setState({ checked });
+    if (this.state.checked === true) {
+      console.log(this.state.checked);
+      document.documentElement.style.setProperty('--boolresult', "#273143");
+    }
+    else if (this.state.checked === false) {
+      console.log(this.state.checked);
+      document.documentElement.style.setProperty('--boolresult', "black");
+    }
   }
 
   abtfunc = () => {
