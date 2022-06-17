@@ -1,5 +1,4 @@
-// import React from "react";
-// import logo from './logo.svg';
+import React from "react";
 import "./App.scss";
 import AboutButton from "./components/AboutSection/AboutSection";
 import UIproject from "./components/UIproject";
@@ -9,26 +8,31 @@ import SideBar from "./components/SideBar";
 import Skills from "./components/Skills/Skills";
 import Project from "./components/Projects/Project";
 import Contact from "./components/Contact/Contact";
+export class App extends React.Component {
+  componentDidMount() {
+    document.documentElement.style.setProperty('--boolresult', "#273143");
+  }
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <SideBar />
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <SideBar />
-
-        <div className="background" id="home">
-          <Routes>
-            <Route path="/" element={<UIproject />} />
-            <Route path="/about" exact element={<AboutButton />} />
-            <Route path="/resume" exact element={<Resume />} />
-            <Route path="/skills" exact element={<Skills />} />
-            <Route path="/my-projects" exact element={<Project />} />
-            <Route path="/contact" exact element={<Contact />} />
-          </Routes>
+          <div className="background" id="home">
+            <Routes>
+              <Route path="/" element={<UIproject />} />
+              <Route path="/about" exact element={<AboutButton />} />
+              <Route path="/resume" exact element={<Resume />} />
+              <Route path="/skills" exact element={<Skills />} />
+              <Route path="/my-projects" exact element={<Project />} />
+              <Route path="/contact" exact element={<Contact />} />
+            </Routes>
+          </div>
         </div>
-      </div>
-    </Router>
-  );
+      </Router>
+
+    )
+  }
 }
 
 export default App;

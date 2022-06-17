@@ -1,3 +1,4 @@
+@import "../MainProject.scss";
 .DownloadIcon{
     padding: 4px;
     font-size: 6em;
@@ -9,15 +10,24 @@
 font-size: 20px;
 font-family: cursive;
 text-decoration: underline 3px;
-color: #808080;
+color:$textcolor;
 margin-right: 39em;
-
 }
 .ResumeBackground{
-    background-color: #e6e6e6;
+    background-color: $bgcolor;
 }
 
 .DownloadIcon:hover{
     background-color: #CCCCFF;
     cursor: pointer;
+}
+.resumecontent{
+    color:$textcolor;
+}
+th{
+    color:$textcolor;
+}
+td{
+    width:370px;
+    color:$textcolor;
 }
