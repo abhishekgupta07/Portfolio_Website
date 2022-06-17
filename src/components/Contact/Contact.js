@@ -1,8 +1,12 @@
 import React, { Component } from "react";
-
+import "../Contact/ContactsStyleSheet.scss"
 export class Contact extends Component {
   render() {
-    return <div>Contact</div>;
+    return (
+      <div className="ContactsBackground">
+        <p className="ContactsPara">Contact</p>
+      </div>
+    );
   }
 }
 
