@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BiCloudDownload } from "react-icons/bi";
-import "./ResumeStylesSheet.scss";
+import "./ResumeStylesSheet.css";
 import Table from 'react-bootstrap/Table'
 
 class Resume extends Component {
