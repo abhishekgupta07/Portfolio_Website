@@ -17,6 +17,7 @@
 }
 
 .ResumeBackground {
+    height: 100vh;
     background-color: $bgcolor;
 }
 
@@ -36,4 +37,16 @@ th {
 td {
     width: 370px;
     color: $textcolor;
+}
+
+.HeadingResumeDownload {
+    margin-left: 100px;
+    color: $textcolor;
+}
+
+.DownloadImg {
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 8%;
 }
