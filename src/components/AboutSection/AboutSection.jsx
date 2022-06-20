@@ -60,8 +60,8 @@ class AboutButton extends Component {
           </CardGroup>
         </div>
       </div>
-    
-      
+
+
     );
   }
 }
