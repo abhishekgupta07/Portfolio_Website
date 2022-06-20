@@ -2,11 +2,11 @@
 
 .ProjectsBackground {
     height: 100%;
-    background-color: $bgcolor;
+    background-color: $bgcolorforaboutsection;
 }
 
 .ProjectsPara {
-    color: $textcolor;
+    color: white;
 }
 
 .ProjectCards {
@@ -15,7 +15,7 @@
 }
 
 #cardsButtonProjects {
-    background-color: $bgcolor;
+    background-color: $bgcolorforaboutsection;
 }
 
 #ButtonBackgroundColor {
@@ -26,9 +26,9 @@
     text-transform: lowercase;	/* Transforms all characters to lowercase */
     text-transform: initial;	/* Sets this property to its default value */
     text-transform: inherit;	/* Inherits this property from its parent element */
-    background-color: $bgcolor  !important;
+    background-color: black  !important;
 }
 .cardheader{
-    background-color: $bgcolor !important;
+    background-color: $bgcolorforaboutsection !important;
     color:$textcolor;
 }

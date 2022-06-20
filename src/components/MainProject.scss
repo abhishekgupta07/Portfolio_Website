@@ -1,17 +1,15 @@
-
-$font-color-grey: grey;
-$font-color-red: #990000;
-$handler-Icon-Color: black;
-$Alice-Blue-Color: #CCCCFF;
-$blackColor-for-AboutSection: black;
-
+// sidebar section style varible boolresult
 $textcolor: white;
 $bgcolor: var(--boolresult);
+// about section style variables
+$bgcolorforaboutsection:var(--boolresultforaboutbg);
+$textcolorforsectioncomponents:var(--boolresultforabouttext);
+$bgcolorforaboutsectioncards:var(--boolresultforaboutcardbg);
 
 .parentProfileDiv {
     height: 100%;
     position: fixed;
-    background: $bgcolor;
+    background: black;
     padding: 60px;
     overflow: auto;
 
@@ -64,13 +62,13 @@ div.buttonAlignment button {
 
 .profileNameHandleDiv {
     margin-bottom: 30px;
-    color: $textcolor;
+    color: $bgcolor;
 
 }
 
 
 .MUI {
-    color: $textcolor;
+    color: $bgcolor;
     font-size: large;
     cursor: pointer;
 }
@@ -86,10 +84,10 @@ div.buttonAlignment button {
 .handleIconsBorder {
     padding: 4px;
     font-size: 2em;
-    color: $textcolor;
+    color: $bgcolor;
     
     border-radius: 50%;
-    background-color: $bgcolor;
+    background-color: black;
 }
 
 .handleIconsBorder:hover {
