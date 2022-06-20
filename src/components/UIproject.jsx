@@ -3,7 +3,7 @@ import "./MainProject.scss";
 import Water from "./Images/Water.jpg";
 import Typical from "react-typical";
 import { Link } from "react-scroll";
-import Switch from "react-switch"; 
+import Switch from "react-switch";
 import "./styledButton.scss"
 class UIproject extends Component {
   constructor() {
