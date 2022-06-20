@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
-import { BsPhone, BsTwitter, BsGithub } from "react-icons/bs";
+import {  BsTwitter, BsGithub } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
 import { HiOutlineMail } from "react-icons/hi";
 
