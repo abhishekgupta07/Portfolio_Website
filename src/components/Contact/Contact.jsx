@@ -3,17 +3,13 @@ import Typical from "react-typical";
 import {  BsTwitter, BsGithub } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
 import { HiOutlineMail } from "react-icons/hi";
-
 import "./Contacts.scss";
-import "../Contact/ContactsStyleSheet.scss";
+
 
 class Contact extends Component {
   render() {
     return (
       <>
-        <div className="ContactsBackground">
-          <p className="ContactsPara">Contact</p>
-        </div>
         <div className="body">
           <h1 className="contactHeader">Contact Me</h1>
           <br />
@@ -22,20 +18,20 @@ class Contact extends Component {
           <br />
           <div>
             <a href={"https://twitter.com"}>
-              <BsTwitter className="contactIcon" title="Twitter" />
+              <BsTwitter className="contactIcon" title="Twitter" color="white" />
             </a>
             <span> </span>
             <a href={"https://linkedin.com/in/abhishekkguptaa "}>
-              <ImLinkedin title="LinkedIn" className="contactIcon" />
+              <ImLinkedin title="LinkedIn" className="contactIcon" color="white" />
             </a>
             <span> </span>
             <a href="mailto:abhishe.gupta@synapsica.com">
-              <HiOutlineMail title="Email" className="contactIcon" />
+              <HiOutlineMail title="Email" className="contactIcon" color="white"/>
             </a>
             <span> </span>
 
             <a href={"https://github.com/abhishekgupta07"}>
-              <BsGithub title="Github" className="contactIcon" />
+              <BsGithub title="Github" className="contactIcon" color="white" />
             </a>
             <span> </span>
           </div>
@@ -48,7 +44,7 @@ class Contact extends Component {
               and I will get back to you as soon as I can. Please allow a couple
               of days for me to respond.
             </p>
-            <div>
+            <div className="">
               <br />
               *Name{" "}
               <input
@@ -106,45 +102,6 @@ class Contact extends Component {
           />
         </div>
       </>
-
-      // <section class="coffeewithme" id="coffeewithme">
-      //     <div class="row alignCenter">
-      //       <h1>Coffee with me.</h1>
-      //       <p>
-      //         I am always excited to work on some awesome projects, message me and let's discuss over coffee.
-      //       </p>
-      //       <form id="theForm" class="simform" autocomplete="off">
-      //         <div class="simform-inner">
-      //           <ol class="questions">
-      //             <li class="current">
-      //               <span><label for="q1">Write a message for me below</label></span>
-      //               <input id="q1" name="q1" type="text"/>
-      //             </li>
-      //             <li>
-      //               <span><label for="q2">Your name</label></span>
-      //               <input id="q2" name="q2" type="text"/>
-      //             </li>
-      //             <li>
-      //               <span><label for="q3">Your email or phone number</label></span>
-      //               <input id="q3" name="q3" type="text"/>
-      //             </li>
-      //           </ol>
-      //           <button class="submit" type="submit">Send answers</button>
-      //           <div class="controls">
-      //             <button class="next"><i class="fa fa-arrow-right"></i></button>
-      //             <div class="progress">
-      //             </div>
-      //             <span class="number">
-      //               <span class="number-current">1</span>
-      //               <span class="number-total">3</span>
-      //             </span>
-      //             <span class="error-message"></span>
-      //           </div>
-      //         </div>
-      //         <span class="final-message"></span>
-      //       </form>
-      //     </div>
-      //   </section>
     );
   }
 }
