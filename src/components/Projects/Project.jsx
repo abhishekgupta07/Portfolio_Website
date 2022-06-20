@@ -20,7 +20,20 @@ let cardvalues = [
   }
 ];
 export class Project extends Component {
+
   render() {
+    if (this.props.clickstate) {
+      // console.log(this.props.clickstate);
+      document.documentElement.style.setProperty('--boolresultforaboutbg', "black");
+      document.documentElement.style.setProperty('--boolresultforabouttext', "white");
+      document.documentElement.style.setProperty('--boolresultforaboutcardbg', "black");
+    }
+    else if (this.props.clickstate === false) {
+      // console.log(this.props.clickstate);
+      document.documentElement.style.setProperty('--boolresultforaboutbg', "gray");
+      document.documentElement.style.setProperty('--boolresultforaboutcardbg', "white");
+      document.documentElement.style.setProperty('--boolresultforabouttext', "black");
+    }  
     return (
       <div className="ProjectsBackground">
         <div>

@@ -18,7 +18,11 @@
 
 .ResumeBackground {
     height: 100vh;
-    background-color: $bgcolor;
+    background-color: $bgcolorforaboutsection;
+}
+#tablebackground{
+    margin-top: 50px;
+    background-color: $bgcolorforaboutsectioncards !important;
 }
 
 .DownloadIcon:hover {
@@ -27,16 +31,16 @@
 }
 
 .resumecontent {
-    color: $textcolor;
+    color: $textcolorforsectioncomponents;
 }
 
 th {
-    color: $textcolor;
+    color: $textcolorforsectioncomponents;
 }
 
 td {
     width: 370px;
-    color: $textcolor;
+    color: $textcolorforsectioncomponents;
 }
 
 .HeadingResumeDownload {
@@ -48,5 +52,5 @@ td {
     margin-left: 10px;
     border-radius: 50%;
     border: 1px solid white;
-    width: 8%;
+    width: 5%;
 }
