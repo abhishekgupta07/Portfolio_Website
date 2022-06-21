@@ -1,33 +1,28 @@
 @import "../MainProject.scss";
-.ContactsBackground {
-    background-color: $bgcolor;
-}
 
 .ContactsPara {
     color: $textcolor;
 }
+
 .body {
-    background:$bgcolor;
+    background: $bgcolorforaboutsection;
     padding-bottom: 1em;
     // background-color: #f5f5f5;
 }
+
 .nameSect {
     font-size: 1em;
 }
-
 .para {
     font-family: cursive;
     color: white;
     border-bottom: 2px solid;
-    background-color: grey;
+    background-color: black;
     border-radius: 10px;
-
-
-
 }
 
 .contactHeader {
-    color:$textcolor;
+    color: $textcolor;
     float: left;
     padding-left: 250px;
     text-decoration: underline 2px;

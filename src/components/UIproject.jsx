@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./MainProject.scss";
 import Water from "./Images/Water.jpg";
 import Typical from "react-typical";
-
 import "./styledButton.scss"
 class UIproject extends Component {
   render() {

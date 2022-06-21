@@ -4,10 +4,20 @@ import {  BsTwitter, BsGithub } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
 import { HiOutlineMail } from "react-icons/hi";
 import "./Contacts.scss";
-
-
 class Contact extends Component {
   render() {
+    if (this.props.clickstate) {
+      // console.log(this.props.clickstate);
+      document.documentElement.style.setProperty('--boolresultforaboutbg', "black");
+      document.documentElement.style.setProperty('--boolresultforabouttext', "white");
+      document.documentElement.style.setProperty('--boolresultforaboutcardbg', "black");
+    }
+    else if (this.props.clickstate === false) {
+      // console.log(this.props.clickstate);
+      document.documentElement.style.setProperty('--boolresultforaboutbg', "gray");
+      document.documentElement.style.setProperty('--boolresultforaboutcardbg', "white");
+      document.documentElement.style.setProperty('--boolresultforabouttext', "black");
+    }
     return (
       <>
         <div className="body">

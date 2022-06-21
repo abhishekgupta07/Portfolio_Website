@@ -4,16 +4,29 @@ import "./ResumeStylesSheet.scss";
 import Table from 'react-bootstrap/Table'
 let downloadicon=require("../Images/download.gif")
 class Resume extends Component {
+
   render() {
+    if (this.props.clickstate) {
+      // console.log(this.props.clickstate);
+      document.documentElement.style.setProperty('--boolresultforaboutbg', "black");
+      document.documentElement.style.setProperty('--boolresultforabouttext', "white");
+      document.documentElement.style.setProperty('--boolresultforaboutcardbg', "black");
+    }
+    else if (this.props.clickstate === false) {
+      // console.log(this.props.clickstate);
+      document.documentElement.style.setProperty('--boolresultforaboutbg', "gray");
+      document.documentElement.style.setProperty('--boolresultforaboutcardbg', "white");
+      document.documentElement.style.setProperty('--boolresultforabouttext', "black");
+    }
     return (
       <div className="ResumeBackground">
         <div>
-          <p id="resume" className="ResumeHeader">
-            DOWNLOAD RESUME
-          </p>
+          <h1 id="resume" className="ResumeHeader">
+          RESUME
+          </h1>
         </div>
         {/* <div> */}
-        <Table striped size="sm">
+        <Table id="tablebackground"striped size="sm">
           <thead>
             <tr>
               <th>Attributes</th>
@@ -57,7 +70,7 @@ class Resume extends Component {
           </tbody>
         </Table>
         {/* </div> */}
-        <h1 className="HeadingResumeDownload">You can download my Resume</h1>
+        <h3 className="HeadingResumeDownload">You can download my Resume</h3>
         <div>
           {/* <a href="/AbhishekResume.pdf" download>
             <BiCloudDownload className=" DownloadIcon" />
