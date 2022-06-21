@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../Projects/ProjectsStyleSheets.scss"
-import { Card, CardGroup, Button } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 let cardvalues = [
   {
     project_title: 'Minor-2',

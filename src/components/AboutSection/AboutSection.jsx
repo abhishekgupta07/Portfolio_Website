@@ -7,9 +7,6 @@ import DS from "../Images/DS.jpg";
 import "../../App.scss"
 
 class AboutButton extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     if (this.props.clickstate) {
       // console.log(this.props.clickstate);
@@ -32,7 +29,7 @@ class AboutButton extends Component {
         <div className="AboutSectionCards ">
           <CardGroup>
             <Card>
-              <Card.Img style={{ "height": "281px" }} id="firstphoto" variant="top" src={logo} />
+              <Card.Img style={{ "height": "283px" ,border:"1px solid black"}} id="firstphoto" variant="top" src={logo} />
               <Card.Body id="cardbg">
                 <Card.Title id="cardtext">React</Card.Title>
                 <Card.Text id="cardtext">
@@ -45,7 +42,7 @@ class AboutButton extends Component {
               </Card.Footer>
             </Card>
             <Card>
-              <Card.Img style={{}} variant="top" src={ML} />
+              <Card.Img style={{border:"1px solid black"}} variant="top" src={ML} />
               <Card.Body id="cardbg">
                 <Card.Title id="cardtext">Machine Learning</Card.Title>
                 <Card.Text id="cardtext">
@@ -58,7 +55,7 @@ class AboutButton extends Component {
               </Card.Footer>
             </Card>
             <Card className="wholecard">
-              <Card.Img variant="top" src={DS} />
+              <Card.Img variant="top" src={DS} style={{border:"1px solid black"}} />
               <Card.Body id="cardbg">
                 <Card.Title id="cardtext">Data Structures and Algorithms</Card.Title>
                 <Card.Text id="cardtext">

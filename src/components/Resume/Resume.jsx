@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { BiCloudDownload } from "react-icons/bi";
 import "./ResumeStylesSheet.scss";
 import Table from 'react-bootstrap/Table'
 let downloadicon=require("../Images/download.gif")
