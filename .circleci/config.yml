@@ -17,9 +17,6 @@ jobs:
           root: ~/
           paths:
             - .
-
-
-
   deploy: # this can be any name you choose
     executor: heroku/default
     steps:

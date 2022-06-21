@@ -25,12 +25,15 @@ class Container extends Component {
       document.documentElement.style.setProperty('--boolresultforaboutbg', "black");
       document.documentElement.style.setProperty('--boolresultforabouttext', "white");
       document.documentElement.style.setProperty('--boolresultforaboutcardbg', "black");
+      document.documentElement.style.setProperty('--skillcardscolor', "gray");
+     
     }
     else if (this.props.clickstate === false) {
       // console.log(this.props.clickstate);
       document.documentElement.style.setProperty('--boolresultforaboutbg', "gray");
       document.documentElement.style.setProperty('--boolresultforaboutcardbg', "white");
       document.documentElement.style.setProperty('--boolresultforabouttext', "black");
+      document.documentElement.style.setProperty('--skillcardscolor', "white");
     }
     return (
       <div className="maindiv">
@@ -112,7 +115,7 @@ class Container extends Component {
           className="animatedText"
           loop={Infinity}
           wrapper="b"
-          steps={[" ", 1000, "<", 1000, "</", 1000, "</>", 1000]}
+          steps={[" ", 1000, "<", 1500, "</", 1500, "</>", 1500]}
         />
       </div>
     );
