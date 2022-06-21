@@ -8,27 +8,9 @@ import { IoMdPaper } from "react-icons/io";
 import { VscAccount } from "react-icons/vsc";
 import { RiInstagramLine } from "react-icons/ri";
 // import { Link } from "react-scroll";
-import Switch from "react-switch";
+// import Switch from "react-switch";
 import { Link } from "react-router-dom";
 class SideBar extends Component {
-  constructor() {
-    super();
-    this.state = { checked: false };
-    this.ToggleChange = this.ToggleChange.bind(this);
-  }
-
-  ToggleChange(checked) {
-    this.setState({ checked });
-    if (this.state.checked === true) {
-      console.log(this.state.checked);
-      document.documentElement.style.setProperty('--boolresult', "#273143");
-    }
-    else if (this.state.checked === false) {
-      console.log(this.state.checked);
-      document.documentElement.style.setProperty('--boolresult', "black");
-    }
-  }
-
   abtfunc = () => {
     return (
       <div className="MUI">
@@ -89,8 +71,9 @@ class SideBar extends Component {
 
   render() {
     return (
+      // <div>
+      //   <div className="parentProfileDiv ">
       <div>
-        <div className="parentProfileDiv ">
           <div className="profileNameHandleDiv ">
             <img src={avatar} className="profileImage" alt="Profile" />
             <br />
@@ -159,7 +142,7 @@ class SideBar extends Component {
           <br />
 
           {/* toggle button */}
-          <label>
+          {/* <label>
             <Switch
               checked={this.state.checked}
               onChange={this.ToggleChange}
@@ -175,8 +158,9 @@ class SideBar extends Component {
               className="react-switch"
               id="material-switch"
             />
-          </label>
-        </div>
+          </label> */}
+        {/* </div>
+      </div> */}
       </div>
     );
   }

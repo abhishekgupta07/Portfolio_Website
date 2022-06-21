@@ -1,7 +1,34 @@
 @import "../MainProject.scss";
-.ProjectsBackground{
-    background-color: $bgcolor;
+
+.ProjectsBackground {
+    height: 100%;
+    background-color: $bgcolorforaboutsection;
 }
-.ProjectsPara{
+
+.ProjectsPara {
+    color: white;
+}
+
+.ProjectCards {
+    width: 60%;
+    margin-left: 20em;
+}
+
+#cardsButtonProjects {
+    background-color: $bgcolorforaboutsection;
+}
+
+#ButtonBackgroundColor {
+    font-family:cursive;
+    text-transform: none;	/* No capitalization, the text renders as it is (default) */
+    text-transform: capitalize;	/* Transforms the first character of each word to uppercase */
+    text-transform: uppercase;	/* Transforms all characters to uppercase */
+    text-transform: lowercase;	/* Transforms all characters to lowercase */
+    text-transform: initial;	/* Sets this property to its default value */
+    text-transform: inherit;	/* Inherits this property from its parent element */
+    background-color: black  !important;
+}
+.cardheader{
+    background-color: $bgcolorforaboutsection !important;
     color:$textcolor;
 }

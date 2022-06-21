@@ -1,5 +1,6 @@
 @import "./components/AboutSection/AboutSection.scss";
 @import "./components/MainProject.scss";
+
 .App {
   text-align: center;
 }
@@ -16,7 +17,7 @@
 }
 
 .AboutSectionHeading {
-  color: black;
+  color: white;
   font-family: cursive;
   font-size: 3em;
   text-decoration: underline;
@@ -44,13 +45,13 @@
 }
 
 .background {
-  background-color: white;
+  background-color: $bgcolorforaboutsection;
 }
 
 .AboutSection {
   margin-top: 0rem;
+  height:100vh;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -63,32 +64,32 @@
 
 .AboutSectionCards {
   margin-left: 250px;
-  background-color: $bgcolor;
+  background-color: $bgcolorforaboutsection;
   /* margin-top:200px; */
 }
 
 $cardtext: white;
 
-@function cardstheme($bgcolor) {
-  @if $bgcolor==$textcolor {
-    $cardtext: black;
-  }
+// @function cardstheme($bgcolor) {
+//   @if $bgcolor==$textcolor {
+//     $cardtext: black;
+//   }
 
-  @else {
-    $cardtext: $textcolor;
-  }
-}
+//   @else {
+//     $cardtext: $textcolor;
+//   }
+// }
 
 #cardbg {
-  background-color: $bgcolor;
+  background-color: $bgcolorforaboutsectioncards;
 }
 
 #cardtext {
-  color: $cardtext;
+  color: $textcolorforsectioncomponents;
 }
 
 .AboutPara {
-  color: black;
+  color: white;
   font-size: 20rm;
   margin-top: 30px;
   margin-left: 250px;
