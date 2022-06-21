@@ -10,25 +10,6 @@ import htmlcssjs from "../Images/HTMLCSSJS.png";
 import ml from "../Images/ml.jpg";
 import Typical from "react-typical";
 
-
-let SkillsData = [
-  {
-    title: "T1",
-    Subtitle: "ST1",
-    Body: "B1",
-  },
-  {
-    title: "T2",
-    Subtitle: "ST2",
-    Body: "B2",
-  },
-  {
-    title: "T3",
-    Subtitle: "ST3",
-    Body: "B3",
-  },
-];
-
 class Container extends Component {
   constructor(props) {
     super(props);
@@ -39,6 +20,21 @@ class Container extends Component {
   }
 
   render() {
+    if (this.props.clickstate) {
+      // console.log(this.props.clickstate);
+      document.documentElement.style.setProperty('--boolresultforaboutbg', "black");
+      document.documentElement.style.setProperty('--boolresultforabouttext', "white");
+      document.documentElement.style.setProperty('--boolresultforaboutcardbg', "black");
+      document.documentElement.style.setProperty('--skillcardscolor', "gray");
+     
+    }
+    else if (this.props.clickstate === false) {
+      // console.log(this.props.clickstate);
+      document.documentElement.style.setProperty('--boolresultforaboutbg', "gray");
+      document.documentElement.style.setProperty('--boolresultforaboutcardbg', "white");
+      document.documentElement.style.setProperty('--boolresultforabouttext', "black");
+      document.documentElement.style.setProperty('--skillcardscolor', "white");
+    }
     return (
       <div className="maindiv">
         <h1 className="heading">SKILLS</h1>
@@ -56,34 +52,22 @@ class Container extends Component {
           >
             <div role="menuitem" tabIndex="0">
               <Card>
-                <Card.Body>
+                <Card.Body className="backgroundcards">
                   <Card.Title>HTML/CSS</Card.Title>
                   <img src={htmlcssjs} alt="html" className="htmlcss" />
 
-                  <Card.Text>
+                  <Card.Text className="backgroundcards">
                     Proficiency
                     <ProgressBar bgcolor="blue" progress="85" height={9} />
                   </Card.Text>
                 </Card.Body>
               </Card>{" "}
             </div>
-
-            {/* {SkillsData.forEach((data) => {
-            return (
-              <Card>
-                <Card.Body>
-                  <Card.Title>{data.title}</Card.Title>
-                  <p>{data.Body}</p>
-                </Card.Body>
-              </Card>
-            );
-          })} */}
-
             <Card>
-              <Card.Body>
+              <Card.Body className="backgroundcards">
                 <Card.Title>Competitive Programming</Card.Title>
 
-                <Card.Text>
+                <Card.Text className="backgroundcards">
                   <img src={cp} alt="CP" className="cpClass" />
                   Proficiency
                   <ProgressBar bgcolor="orange" progress="70" height={10} />
@@ -91,10 +75,10 @@ class Container extends Component {
               </Card.Body>
             </Card>
             <Card>
-              <Card.Body>
+              <Card.Body className="backgroundcards">
                 <Card.Title>ReactJS</Card.Title>
 
-                <Card.Text>
+                <Card.Text className="backgroundcards">
                   <img src={logo} alt="logo" />
                   Proficiency
                   <ProgressBar bgcolor="#99ccff" progress="90" height={9} />
@@ -102,10 +86,10 @@ class Container extends Component {
               </Card.Body>
             </Card>
             <Card>
-              <Card.Body>
+              <Card.Body className="backgroundcards">
                 <Card.Title>Android</Card.Title>
 
-                <Card.Text>
+                <Card.Text className="backgroundcards">
                   <img src={android} alt="android" className="androidLogo" />
                   <br />
                   Proficiency
@@ -114,10 +98,10 @@ class Container extends Component {
               </Card.Body>
             </Card>
             <Card>
-              <Card.Body>
+              <Card.Body className="backgroundcards">
                 <Card.Title>Machine Learning</Card.Title>
 
-                <Card.Text>
+                <Card.Text className="backgroundcards">
                   <img src={ml} alt="machinelearning" className="ml" />
                   Proficiency
                   <ProgressBar bgcolor="#ADD8E6" progress="60" height={9} />
@@ -128,11 +112,11 @@ class Container extends Component {
           </Coverflow>
         </div>
         <Typical
-            className="animatedText"
-            loop={Infinity}
-            wrapper="b"
-            steps={[" ", 1000, "<", 1000, "</", 1000, "</>", 1000]}
-          />
+          className="animatedText"
+          loop={Infinity}
+          wrapper="b"
+          steps={[" ", 1000, "<", 1500, "</", 1500, "</>", 1500]}
+        />
       </div>
     );
   }

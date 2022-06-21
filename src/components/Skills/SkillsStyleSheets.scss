@@ -1,11 +1,5 @@
 @import "../MainProject.scss";
-.SkillBackground{
-background-color: $bgcolor;
-}
-.SkillsPara{
-    color:$textcolor;
-}
-
+$skillcards:var(--skillcardscolor);
 .skillsCard{
     margin-left: 240px ;
     background-color: black;
@@ -40,4 +34,8 @@ background-color: $bgcolor;
 .htmlcss{
     width: 220px;
     height: auto;
+}
+.backgroundcards{
+    background-color:$skillcards !important;
+    color:black !important;
 }
