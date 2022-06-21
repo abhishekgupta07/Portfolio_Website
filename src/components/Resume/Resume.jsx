@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./ResumeStylesSheet.scss";
 import Table from 'react-bootstrap/Table'
-let downloadicon=require("../Images/download.gif")
+let downloadicon = require("../Images/download.gif")
 class Resume extends Component {
 
   render() {
@@ -21,11 +21,11 @@ class Resume extends Component {
       <div className="ResumeBackground">
         <div>
           <h1 id="resume" className="ResumeHeader">
-          RESUME
+            RESUME
           </h1>
         </div>
         {/* <div> */}
-        <Table id="tablebackground"striped size="sm">
+        <Table id="tablebackground" striped size="sm">
           <thead>
             <tr>
               <th>Attributes</th>
@@ -75,8 +75,8 @@ class Resume extends Component {
             <BiCloudDownload className=" DownloadIcon" />
           </a> */}
           <br></br>
-          <a href="https://drive.google.com/file/d/1hrczE7AN1nkpG2PosQ9Le546ZWZrsmdZ/view?usp=sharing" target="_blank">
-          <img className="DownloadImg"src={downloadicon} alt="donwload-icon" />
+          <a rel="noopener" href="https://drive.google.com/file/d/1hrczE7AN1nkpG2PosQ9Le546ZWZrsmdZ/view?usp=sharing" >
+            <img className="DownloadImg" src={downloadicon} alt="donwload-icon" />
           </a>
         </div>
       </div>
