@@ -9,10 +9,10 @@ jobs:
     steps:
       - checkout
       - node/install-packages:
-          pkg-manager: npm
+          pkg-manager: yarn
       - run:
-          command: npm install -g npm@latest
-          name: npm update
+          command: yarn build
+          name: Build app
       - persist_to_workspace:
           root: ~/
           paths:
