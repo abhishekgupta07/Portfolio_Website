@@ -11,8 +11,8 @@ jobs:
       - node/install-packages:
           pkg-manager: npm
       - run:
-          command: npm i
-          name: Build app
+          command: npm install -g npm@latest
+          name: npm update
       - persist_to_workspace:
           root: ~/
           paths:
