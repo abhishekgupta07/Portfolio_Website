@@ -8,7 +8,7 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - npm/install-packages:
+      - node/install-packages:
           pkg-manager: npm
       - run:
           command: npm i
