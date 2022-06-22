@@ -35,31 +35,31 @@ class Resume extends Component {
           <tbody>
             <tr>
               <td>Name</td>
-              <td>Utkarsh Singh</td>
+              <td>Abhishek Gupta</td>
             </tr>
             <tr>
               <td>Age</td>
-              <td>21</td>
+              <td>20 Years</td>
             </tr>
             <tr>
               <td>College</td>
-              <td>University of Petroleum and Energy Studies</td>
+              <td>Lovely Professional University</td>
             </tr>
             <tr>
               <td>CGPA</td>
-              <td>8.2</td>
+              <td>8.0</td>
             </tr>
             <tr>
               <td>12th Percentage</td>
-              <td>88%</td>
+              <td>89%</td>
             </tr>
             <tr>
               <td>Phone Number</td>
-              <td>9140964984</td>
+              <td>8744000125</td>
             </tr>
             <tr>
               <td>Email</td>
-              <td>Utkarshsinghclash@gmail.com</td>
+              <td>ambitiousabhishek7@gmail.com</td>
             </tr>
             <tr>
               <td>Graduating Year</td>
@@ -75,7 +75,7 @@ class Resume extends Component {
             <BiCloudDownload className=" DownloadIcon" />
           </a> */}
           <br></br>
-          <a rel="noopener" href="https://drive.google.com/file/d/1hrczE7AN1nkpG2PosQ9Le546ZWZrsmdZ/view?usp=sharing" >
+          <a rel="noopener" href="https://drive.google.com/file/d/1ZbSEUxC3PpQ40BRFmedeDBtHBkdqy2qE/view" >
             <img className="DownloadImg" src={downloadicon} alt="donwload-icon" />
           </a>
         </div>
