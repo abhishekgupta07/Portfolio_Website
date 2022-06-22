@@ -7,6 +7,7 @@ class UIproject extends Component {
   render() {
     return (
       <div>
+        <title>hiii</title>
         <div>
           <img src={Water} className="Heroimage" alt="BackgroundImage" />
           <Typical

@@ -27,7 +27,7 @@ class Contact extends Component {
           <br />
           <br />
           <div>
-            <a href={"https://twitter.com"}>
+            <a href={"https://twitter.com/ABHISHE25840876"}>
               <BsTwitter className="contactIcon" title="Twitter" color="white" />
             </a>
             <span> </span>
@@ -35,7 +35,7 @@ class Contact extends Component {
               <ImLinkedin title="LinkedIn" className="contactIcon" color="white" />
             </a>
             <span> </span>
-            <a href="mailto:abhishe.gupta@synapsica.com">
+            <a href="mailto:ambitiousabhsihek7@gmail.com">
               <HiOutlineMail title="Email" className="contactIcon" color="white"/>
             </a>
             <span> </span>

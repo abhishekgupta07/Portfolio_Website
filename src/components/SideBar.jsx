@@ -77,14 +77,14 @@ class SideBar extends Component {
           <div className="profileNameHandleDiv ">
             <img src={avatar} className="profileImage" alt="Profile" />
             <br />
-            <h1 className="nameSect"> NAME </h1>
+            <h1 className="nameSect"> Abhishek Gupta </h1>
 
             <div className="handleIcons">
-              <a href={"https://twitter.com"}>
+              <a href={"https://twitter.com/ABHISHE25840876"}>
                 <BsTwitter className="handleIconsBorder" title="Twitter" />
               </a>
               <span> </span>
-              <a href={"https://instagram.com/"}>
+              <a href={"https://instagram.com/ambitiousabhishek"}>
                 <RiInstagramLine
                   className="handleIconsBorder"
                   Tooltip
